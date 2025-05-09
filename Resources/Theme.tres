@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cyaprjck1qyde"]
+
+[ext_resource type="SystemFont" uid="uid://bhgowmy4cs8a" path="res://Resources/HeaderFont.tres" id="1_kpcpn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpcpn"]
+bg_color = Color(0.376471, 0.376471, 0.376471, 0.501961)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[resource]
+GridContainer/constants/h_separation = 16
+GridContainer/constants/v_separation = 16
+MarginContainer/constants/margin_bottom = 16
+MarginContainer/constants/margin_left = 16
+MarginContainer/constants/margin_right = 16
+MarginContainer/constants/margin_top = 16
+OptionButton/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+OptionButton/font_sizes/font_size = 16
+OptionButton/fonts/font = ExtResource("1_kpcpn")
+Panel/styles/panel = SubResource("StyleBoxFlat_kpcpn")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/font_sizes/bold_font_size = 48
+RichTextLabel/fonts/bold_font = ExtResource("1_kpcpn")
+RichTextLabel/fonts/normal_font = ExtResource("1_kpcpn")

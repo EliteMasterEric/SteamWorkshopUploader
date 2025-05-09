@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca5hi1rje4i1w"]
+
+[ext_resource type="Script" uid="uid://ulh8ogp5jhy8" path="res://Scripts/Globals/Logger.gd" id="1_qatdo"]
+
+[node name="Logger" type="Node"]
+script = ExtResource("1_qatdo")

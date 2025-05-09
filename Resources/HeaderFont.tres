@@ -1,0 +1,5 @@
+[gd_resource type="SystemFont" format=3 uid="uid://bhgowmy4cs8a"]
+
+[resource]
+font_names = PackedStringArray("Roboto")
+font_weight = 700

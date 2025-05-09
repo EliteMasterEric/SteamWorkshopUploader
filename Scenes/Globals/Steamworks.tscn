@@ -1,0 +1,15 @@
+[gd_scene load_steps=10 format=3 uid="uid://c8ur4xaldd8bk"]
+
+[ext_resource type="Script" uid="uid://bjbalk1s3a5y5" path="res://Scripts/Globals/Steamworks.gd" id="1_jr8ps"]
+[ext_resource type="Script" uid="uid://do8twe80uj13k" path="res://Scripts/Resources/SteamApp.gd" id="2_dlo17"]
+[ext_resource type="Resource" uid="uid://bjthjcsucn14w" path="res://Resources/SteamApps/BindingOfIsaacRebirth.tres" id="3_7fade"]
+[ext_resource type="Resource" uid="uid://4b3oaudrcbw5" path="res://Resources/SteamApps/Left4Dead2.tres" id="4_8a74i"]
+[ext_resource type="Resource" uid="uid://dlybcrdkbudiq" path="res://Resources/SteamApps/RimWorld.tres" id="5_0jwue"]
+[ext_resource type="Resource" uid="uid://b3svdbbss26li" path="res://Resources/SteamApps/Spacewar.tres" id="6_kmqp2"]
+[ext_resource type="Resource" uid="uid://b0gm0iked587c" path="res://Resources/SteamApps/TeamFortress2.tres" id="7_y1wth"]
+[ext_resource type="Resource" uid="uid://cuc673nis64ld" path="res://Resources/SteamApps/Rust.tres" id="8_kmqp2"]
+[ext_resource type="Resource" uid="uid://crycm0fb3ndyu" path="res://Resources/SteamApps/CounterStrike2.tres" id="9_y1wth"]
+
+[node name="Steamworks" type="Node"]
+script = ExtResource("1_jr8ps")
+steam_apps = Array[ExtResource("2_dlo17")]([ExtResource("3_7fade"), ExtResource("4_8a74i"), ExtResource("5_0jwue"), ExtResource("6_kmqp2"), ExtResource("7_y1wth"), ExtResource("8_kmqp2"), ExtResource("9_y1wth")])

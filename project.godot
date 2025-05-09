@@ -1,0 +1,31 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Steam Workshop Uploader"
+run/main_scene="uid://dkql7x3bwjqlb"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Steamworks="*res://Scenes/Globals/Steamworks.tscn"
+Logger="*res://Scenes/Globals/Logger.tscn"
+UserPrefHandler="*res://Scenes/Globals/UserPrefHandler.tscn"
+
+[debug]
+
+file_logging/enable_file_logging=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SteamApp" load_steps=3 format=3 uid="uid://b0gm0iked587c"]
+
+[ext_resource type="Texture2D" uid="uid://w3p1enjpqqgm" path="res://Textures/SteamApps/440.jpg" id="1_ajhdn"]
+[ext_resource type="Script" uid="uid://do8twe80uj13k" path="res://Scripts/Resources/SteamApp.gd" id="1_nhkmy"]
+
+[resource]
+script = ExtResource("1_nhkmy")
+app_id = 440
+name = "Team Fortress 2"
+icon = ExtResource("1_ajhdn")
+tags = PackedStringArray()
+metadata/_custom_type_script = "uid://do8twe80uj13k"
