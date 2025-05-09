@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://yeuwi5ir2uqa"]
+[gd_scene load_steps=25 format=4 uid="uid://yeuwi5ir2uqa"]
 
 [ext_resource type="PackedScene" uid="uid://c8r01vv0beco5" path="res://Scenes/Toolbar.tscn" id="1_e13vq"]
 [ext_resource type="Theme" uid="uid://cyaprjck1qyde" path="res://Resources/Theme.tres" id="2_d2hyp"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://j2nlibwkb8ni" path="res://Scripts/Interface/Edit/FilesItemList.gd" id="4_v2ixw"]
 [ext_resource type="Script" uid="uid://di7r3idru8g7v" path="res://Scripts/Interface/Main/LogDisplay.gd" id="5_gi581"]
 [ext_resource type="Script" uid="uid://btuu1qad2e5vq" path="res://Scripts/Interface/Edit/DescriptionShouldUpdateCheckBox.gd" id="5_lml5s"]
+[ext_resource type="Script" uid="uid://gu6ryseqvra1" path="res://Scripts/Interface/Edit/SelectPreviewImageButton.gd" id="5_wmsyf"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gi581"]
 
@@ -1482,82 +1483,82 @@ cache/1/16/0/underline_thickness = 0.796875
 cache/1/16/0/scale = 1.0
 cache/1/16/0/textures/0/offsets = PackedInt32Array(199, 0, 57, 18, 14, 18, 242, 19)
 cache/1/16/0/textures/0/image = SubResource("Image_wmsyf")
-cache/1/16/0/glyphs/54/advance = Vector2(9.39688, 16.0938)
+cache/1/16/0/glyphs/54/advance = Vector2(9.69688, 16.0938)
 cache/1/16/0/glyphs/54/offset = Vector2(-1, -15)
 cache/1/16/0/glyphs/54/size = Vector2(12, 16)
 cache/1/16/0/glyphs/54/uv_rect = Rect2(1, 1, 12, 16)
 cache/1/16/0/glyphs/54/texture_idx = 0
-cache/1/16/0/glyphs/87/advance = Vector2(6.89688, 16.0938)
+cache/1/16/0/glyphs/87/advance = Vector2(7.19688, 16.0938)
 cache/1/16/0/glyphs/87/offset = Vector2(-1, -14)
 cache/1/16/0/glyphs/87/size = Vector2(10, 15)
 cache/1/16/0/glyphs/87/uv_rect = Rect2(15, 1, 10, 15)
 cache/1/16/0/glyphs/87/texture_idx = 0
-cache/1/16/0/glyphs/72/advance = Vector2(9.81875, 16.0938)
+cache/1/16/0/glyphs/72/advance = Vector2(10.1188, 16.0938)
 cache/1/16/0/glyphs/72/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/72/size = Vector2(12, 13)
 cache/1/16/0/glyphs/72/uv_rect = Rect2(27, 1, 12, 13)
 cache/1/16/0/glyphs/72/texture_idx = 0
-cache/1/16/0/glyphs/68/advance = Vector2(9.88125, 16.0938)
+cache/1/16/0/glyphs/68/advance = Vector2(10.1813, 16.0938)
 cache/1/16/0/glyphs/68/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/68/size = Vector2(12, 13)
 cache/1/16/0/glyphs/68/uv_rect = Rect2(41, 1, 12, 13)
 cache/1/16/0/glyphs/68/texture_idx = 0
-cache/1/16/0/glyphs/80/advance = Vector2(15.8969, 16.0938)
+cache/1/16/0/glyphs/80/advance = Vector2(16.1969, 16.0938)
 cache/1/16/0/glyphs/80/offset = Vector2(0, -12)
 cache/1/16/0/glyphs/80/size = Vector2(17, 13)
 cache/1/16/0/glyphs/80/uv_rect = Rect2(55, 1, 17, 13)
 cache/1/16/0/glyphs/80/texture_idx = 0
-cache/1/16/0/glyphs/3/advance = Vector2(4.75625, 16.0938)
+cache/1/16/0/glyphs/3/advance = Vector2(5.05625, 16.0938)
 cache/1/16/0/glyphs/3/offset = Vector2(0, 0)
 cache/1/16/0/glyphs/3/size = Vector2(0, 0)
 cache/1/16/0/glyphs/3/uv_rect = Rect2(0, 0, 0, 0)
 cache/1/16/0/glyphs/3/texture_idx = -1
-cache/1/16/0/glyphs/58/advance = Vector2(15.7406, 16.0938)
+cache/1/16/0/glyphs/58/advance = Vector2(16.0406, 16.0938)
 cache/1/16/0/glyphs/58/offset = Vector2(-2, -15)
 cache/1/16/0/glyphs/58/size = Vector2(20, 16)
 cache/1/16/0/glyphs/58/uv_rect = Rect2(74, 1, 20, 16)
 cache/1/16/0/glyphs/58/texture_idx = 0
-cache/1/16/0/glyphs/82/advance = Vector2(10.3813, 16.0938)
+cache/1/16/0/glyphs/82/advance = Vector2(10.6813, 16.0938)
 cache/1/16/0/glyphs/82/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/82/size = Vector2(13, 13)
 cache/1/16/0/glyphs/82/uv_rect = Rect2(96, 1, 13, 13)
 cache/1/16/0/glyphs/82/texture_idx = 0
-cache/1/16/0/glyphs/85/advance = Vector2(7.50625, 16.0938)
+cache/1/16/0/glyphs/85/advance = Vector2(7.80625, 16.0938)
 cache/1/16/0/glyphs/85/offset = Vector2(0, -12)
 cache/1/16/0/glyphs/85/size = Vector2(9, 13)
 cache/1/16/0/glyphs/85/uv_rect = Rect2(111, 1, 9, 13)
 cache/1/16/0/glyphs/85/texture_idx = 0
-cache/1/16/0/glyphs/78/advance = Vector2(9.75625, 16.0938)
+cache/1/16/0/glyphs/78/advance = Vector2(10.0563, 16.0938)
 cache/1/16/0/glyphs/78/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/78/size = Vector2(12, 16)
 cache/1/16/0/glyphs/78/uv_rect = Rect2(122, 1, 12, 16)
 cache/1/16/0/glyphs/78/texture_idx = 0
-cache/1/16/0/glyphs/86/advance = Vector2(8.39688, 16.0938)
+cache/1/16/0/glyphs/86/advance = Vector2(8.69688, 16.0938)
 cache/1/16/0/glyphs/86/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/86/size = Vector2(11, 13)
 cache/1/16/0/glyphs/86/uv_rect = Rect2(136, 1, 11, 13)
 cache/1/16/0/glyphs/86/texture_idx = 0
-cache/1/16/0/glyphs/75/advance = Vector2(10.7563, 16.0938)
+cache/1/16/0/glyphs/75/advance = Vector2(11.0563, 16.0938)
 cache/1/16/0/glyphs/75/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/75/size = Vector2(12, 16)
 cache/1/16/0/glyphs/75/uv_rect = Rect2(149, 1, 12, 16)
 cache/1/16/0/glyphs/75/texture_idx = 0
-cache/1/16/0/glyphs/83/advance = Vector2(10.5688, 16.0938)
+cache/1/16/0/glyphs/83/advance = Vector2(10.8688, 16.0938)
 cache/1/16/0/glyphs/83/offset = Vector2(0, -12)
 cache/1/16/0/glyphs/83/size = Vector2(12, 17)
 cache/1/16/0/glyphs/83/uv_rect = Rect2(1, 19, 12, 17)
 cache/1/16/0/glyphs/83/texture_idx = 0
-cache/1/16/0/glyphs/56/advance = Vector2(12.475, 16.0938)
+cache/1/16/0/glyphs/56/advance = Vector2(12.775, 16.0938)
 cache/1/16/0/glyphs/56/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/56/size = Vector2(13, 16)
 cache/1/16/0/glyphs/56/uv_rect = Rect2(163, 1, 13, 16)
 cache/1/16/0/glyphs/56/texture_idx = 0
-cache/1/16/0/glyphs/79/advance = Vector2(5.06875, 16.0938)
+cache/1/16/0/glyphs/79/advance = Vector2(5.36875, 16.0938)
 cache/1/16/0/glyphs/79/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/79/size = Vector2(6, 16)
 cache/1/16/0/glyphs/79/uv_rect = Rect2(178, 1, 6, 16)
 cache/1/16/0/glyphs/79/texture_idx = 0
-cache/1/16/0/glyphs/71/advance = Vector2(10.5688, 16.0938)
+cache/1/16/0/glyphs/71/advance = Vector2(10.8688, 16.0938)
 cache/1/16/0/glyphs/71/offset = Vector2(-1, -15)
 cache/1/16/0/glyphs/71/size = Vector2(12, 16)
 cache/1/16/0/glyphs/71/uv_rect = Rect2(186, 1, 12, 16)
@@ -1801,10 +1802,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 expand_mode = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer"]
+[node name="ButtonSelectPreviewImage" type="Button" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 4
+tooltip_text = "Yes, this supports GIFs too."
 text = "Select Preview Image"
+script = ExtResource("5_wmsyf")
 
 [node name="GridContainer2" type="GridContainer" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -1941,6 +1945,7 @@ text = "Revert Changes"
 layout_mode = 2
 text = "Submit Changes"
 
+[connection signal="pressed" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer/ButtonSelectPreviewImage" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer/ButtonSelectPreviewImage" method="_on_pressed"]
 [connection signal="text_changed" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/TextEditDescription" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/TextEditDescription" method="_on_text_changed"]
 [connection signal="toggled" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/CheckBoxDescriptionShouldUpdate" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/CheckBoxDescriptionShouldUpdate" method="_on_toggled"]
 [connection signal="pressed" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/HBoxContainerSubmit/ButtonRevert" to="." method="_on_button_revert_pressed"]

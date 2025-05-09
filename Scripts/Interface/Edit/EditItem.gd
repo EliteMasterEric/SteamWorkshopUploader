@@ -16,6 +16,10 @@ func reset_fields():
 	
 	var preview_url:String = Steamworks.current_ugc_item["preview_url"]
 
+	var _tags_truncated:bool = Steamworks.current_ugc_item["tags_truncated"]
+	var tags:String = Steamworks.current_ugc_item["tags"]
+	var _tag_list = tags.split(",")
+
 	var _result:int = Steamworks.current_ugc_item["result"]
 	var _file_type:Steam.WorkshopFileType = Steamworks.current_ugc_item["file_type"]
 	var _creator_app_id:int = Steamworks.current_ugc_item["creator_app_id"]
@@ -26,16 +30,12 @@ func reset_fields():
 	var _time_added_to_user_list:int = Steamworks.current_ugc_item["time_added_to_user_list"]
 	var _banned:bool = Steamworks.current_ugc_item["banned"]
 	var _accepted_for_use:bool = Steamworks.current_ugc_item["accepted_for_use"]
-	var _tags_truncated:bool = Steamworks.current_ugc_item["tags_truncated"]
-	var tags:String = Steamworks.current_ugc_item["tags"]
-	var _tag_list = tags.split(",")
 	var _handle_file:int = Steamworks.current_ugc_item["handle_file"]
 	var _handle_preview_file:int = Steamworks.current_ugc_item["handle_preview_file"]
 	var _file_name:String = Steamworks.current_ugc_item["file_name"]
 	var _file_size:int = Steamworks.current_ugc_item["file_size"]
 	var _preview_file_size:int = Steamworks.current_ugc_item["preview_file_size"]
 	var _url:String = Steamworks.current_ugc_item["url"]
-
 	var _num_children:int = Steamworks.current_ugc_item["num_children"]
 	var _total_files_size:int = Steamworks.current_ugc_item["total_files_size"]
 	
@@ -52,6 +52,8 @@ func reset_fields():
 	load_preview_from_url(preview_url)
 
 func load_preview_from_url(url:String) -> void:
+	if url == "":
+		return
 	WebImage.load_image_from_url(url, %SpritePreviewImage)
 
 func _on_button_revert_pressed() -> void:
@@ -74,6 +76,11 @@ func _on_button_submit_pressed() -> void:
 
 	new_ugc_data["visibility"] = get_visiblity()
 	new_ugc_data["tags"] = ",".join(%HBoxTagList.current_tags)
+	
+	if %ButtonSelectPreviewImage.preview_image_path != "":
+		new_ugc_data["preview_path"] = %ButtonSelectPreviewImage.preview_image_path
+	else:
+		new_ugc_data["preview_path"] = ""
 	
 	var change_notes:String = %LineEditChangeNotes.text
 

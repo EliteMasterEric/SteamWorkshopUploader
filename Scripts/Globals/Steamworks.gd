@@ -134,6 +134,10 @@ func update_workshop_item(file_id:int, new_params:Dictionary, change_notes:Strin
 	Steam.setItemTags(_ugc_update_handle, new_params["tags"].split(','))
 	Steam.setItemVisibility(_ugc_update_handle, new_params["visibility"])
 
+	if new_params["preview_path"] != "":
+		print("Updating item preview file: " + new_params["preview_path"])
+		Steam.setItemPreview(_ugc_update_handle, new_params["preview_path"])
+
 	# Result will be received by on_item_updated
 	Steam.submitItemUpdate(_ugc_update_handle, change_notes)
 

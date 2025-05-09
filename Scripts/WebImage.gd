@@ -62,3 +62,20 @@ static func load_as_gif(buffer:PackedByteArray, target:TextureRect):
 	print("Loading texture as GIF...")
 	var texture:AnimatedTexture = GifManager.animated_texture_from_buffer(buffer)
 	target.texture = texture
+	
+static func load_from_path(path:String, target:TextureRect):
+	print("Loading texture from path...")
+	if path.ends_with(".gif"):
+		var texture:AnimatedTexture = GifManager.animated_texture_from_file(path)
+		target.texture = texture
+	else:
+		var image = Image.new()
+		var err = image.load(path)
+		if err != OK:
+			Logger.error("Failed to parse image from path: " + path)
+			return
+		target.texture = ImageTexture.create_from_image(image)
+
+static func get_byte_size_from_path(path:String) -> int:
+	var bytes = FileAccess.get_file_as_bytes(path)
+	return bytes.size()

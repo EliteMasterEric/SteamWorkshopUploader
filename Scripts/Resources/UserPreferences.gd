@@ -15,6 +15,16 @@ class_name UserPreferences
 		auto_init = value
 		save()
 
+@export var native_dialogs: bool = false:
+	set(value):
+		native_dialogs = value
+		save()
+		
+@export var last_browse_dir: String = "":
+	set(value):
+		last_browse_dir = value
+		save()
+
 ## Where the save data goes.
 const SAVE_LOCATION = "user://preferences.tres"
 

@@ -18,3 +18,4 @@ A simple tool made in Godot. It helps you upload workshop items to any app on St
 - [] Support uploading thumbnails, including GIFs.
 - [] Support uploading a workshop item folder (basic)
 - [] Support excluding files from the upload (via UI or `.steamignore`)
+- [] Support for a command-line interface (upload via arguments)
