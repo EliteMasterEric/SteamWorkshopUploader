@@ -10,6 +10,7 @@ A simple tool made in Godot. It helps you upload workshop items to any app on St
 
 - Intuitive user interface.
 - Supports modifying an item's title, description, visiblity, and tags.
+- Display preview of an item's BBCode description.
 - Supports displaying thumbnails, including GIFs.
 - Open source, contributions are welcome!
 
