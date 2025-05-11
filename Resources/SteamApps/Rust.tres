@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SteamApp" load_steps=3 format=3 uid="uid://cuc673nis64ld"]
 
-[ext_resource type="Texture2D" uid="uid://nim8ow6ghlg" path="res://Textures/SteamApps/252490.jpg" id="1_3ed6a"]
+[ext_resource type="Texture2D" uid="uid://nim8ow6ghlg" path="res://textures/steamapps/252490.jpg" id="1_3ed6a"]
 [ext_resource type="Script" uid="uid://do8twe80uj13k" path="res://Scripts/Resources/SteamApp.gd" id="1_qbl3q"]
 
 [resource]

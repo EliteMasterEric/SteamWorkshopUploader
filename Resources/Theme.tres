@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=3 format=3 uid="uid://cyaprjck1qyde"]
 
-[ext_resource type="SystemFont" uid="uid://bhgowmy4cs8a" path="res://Resources/HeaderFont.tres" id="1_kpcpn"]
+[ext_resource type="SystemFont" uid="uid://bhgowmy4cs8a" path="res://assets/fonts/header_font.tres" id="1_kpcpn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpcpn"]
 bg_color = Color(0.376471, 0.376471, 0.376471, 0.501961)

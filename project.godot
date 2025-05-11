@@ -11,15 +11,17 @@ config_version=5
 [application]
 
 config/name="Steam Workshop Uploader"
+config/version="v1.0.0"
 run/main_scene="uid://dkql7x3bwjqlb"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Steamworks="*res://Scenes/Globals/Steamworks.tscn"
-Logger="*res://Scenes/Globals/Logger.tscn"
-UserPrefHandler="*res://Scenes/Globals/UserPrefHandler.tscn"
+Steamworks="*res://scenes/globals/Steamworks.tscn"
+Logger="*res://scenes/globals/Logger.tscn"
+UserPrefHandler="*res://scenes/globals/UserPrefHandler.tscn"
+Tests="*res://scenes/globals/Tests.tscn"
 
 [debug]
 

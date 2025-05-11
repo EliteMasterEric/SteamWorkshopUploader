@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cy35vcmug102t"]
 
-[ext_resource type="Script" uid="uid://bkghl06o1os58" path="res://Scripts/Globals/UserPrefHandler.gd" id="1_tn53e"]
+[ext_resource type="Script" uid="uid://bkghl06o1os58" path="res://scripts/globals/user_pref_handler.gd" id="1_tn53e"]
 
 [node name="UserPrefHandler" type="Node"]
 script = ExtResource("1_tn53e")

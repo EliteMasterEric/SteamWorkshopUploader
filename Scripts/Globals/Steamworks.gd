@@ -134,8 +134,12 @@ func update_workshop_item(file_id:int, new_params:Dictionary, change_notes:Strin
 	Steam.setItemTags(_ugc_update_handle, new_params["tags"].split(','))
 	Steam.setItemVisibility(_ugc_update_handle, new_params["visibility"])
 
+	if new_params["upload_path"] != "":
+		print("Uploading workshop files: " + new_params["upload_path"])
+		Steam.setItemContent(_ugc_update_handle, new_params["upload_path"])
+
 	if new_params["preview_path"] != "":
-		print("Updating item preview file: " + new_params["preview_path"])
+		Logger.info("Uploading item preview: " + new_params["preview_path"])
 		Steam.setItemPreview(_ugc_update_handle, new_params["preview_path"])
 
 	# Result will be received by on_item_updated
@@ -190,10 +194,16 @@ func on_current_stats_received():
 func on_item_created(result:int, file_id: int, accept_tos:bool):
 	Logger.info("[STEAM] Item created: " + str(file_id) + " (result: " + str(result) + ")")
 	emit_signal("item_created", result, file_id, accept_tos)
+
+	if accept_tos:
+		open_tos_url()
 	
-func on_item_updated(result: int, need_to_accept_tos:bool):
-	Logger.info("[STEAM] Item updated: " + str(result) + " (need to accept TOS? " + str(need_to_accept_tos) + ")")
-	emit_signal("item_updated", result, need_to_accept_tos)
+func on_item_updated(result: int, accept_tos:bool):
+	Logger.info("[STEAM] Item updated: " + str(result) + " (need to accept TOS? " + str(accept_tos) + ")")
+	emit_signal("item_updated", result, accept_tos)
+
+	if accept_tos:
+		open_tos_url()
 	
 func on_item_deleted(result:int, file_id: int):
 	Logger.info("[STEAM] Item deleted: " + str(file_id) + " (result: " + str(result) + ")")

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="SteamApp" load_steps=3 format=3 uid="uid://b3svdbbss26li"]
 
 [ext_resource type="Script" uid="uid://do8twe80uj13k" path="res://Scripts/Resources/SteamApp.gd" id="1_6sxeq"]
-[ext_resource type="Texture2D" uid="uid://bjqehcmwdbxej" path="res://Textures/SteamApps/480.png" id="1_uftgo"]
+[ext_resource type="Texture2D" uid="uid://bjqehcmwdbxej" path="res://textures/steamapps/480.png" id="1_uftgo"]
 
 [resource]
 script = ExtResource("1_6sxeq")

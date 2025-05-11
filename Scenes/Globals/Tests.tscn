@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b74uwre5y5bk5"]
+
+[ext_resource type="Script" uid="uid://c4kpyqqpoe0ee" path="res://scripts/globals/tests.gd" id="1_kepsr"]
+
+[node name="Tests" type="Node"]
+script = ExtResource("1_kepsr")
+tests_enabled = false

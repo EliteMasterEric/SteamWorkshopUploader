@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SteamApp" load_steps=3 format=3 uid="uid://bjthjcsucn14w"]
+
+[ext_resource type="Texture2D" uid="uid://d0ql88qdffa07" path="res://textures/steamapps/250900.jpg" id="1_7rb6q"]
+[ext_resource type="Script" uid="uid://do8twe80uj13k" path="res://Scripts/Resources/SteamApp.gd" id="1_d5ano"]
+
+[resource]
+script = ExtResource("1_d5ano")
+app_id = 250900
+name = "The Binding of Isaac: Rebirth"
+icon = ExtResource("1_7rb6q")
+tags = PackedStringArray("Lua", "Items", "Active Items", "Trinkets", "Pills", "Cards", "Pickups", "Player Characters", "Familiars", "Babies", "Rooms", "Floors", "Enemies", "Bosses", "Hazards", "Challenges", "Tweaks", "Removals", "Graphics", "Shaders", "Sound Effects", "Music")
+metadata/_custom_type_script = "uid://do8twe80uj13k"
