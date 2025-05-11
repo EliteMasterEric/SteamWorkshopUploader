@@ -14,7 +14,7 @@ config/name="Steam Workshop Uploader"
 config/version="v1.0.0"
 run/main_scene="uid://dkql7x3bwjqlb"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://bukws6e6mjqnr"
 
 [autoload]
 
