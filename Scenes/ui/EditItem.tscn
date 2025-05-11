@@ -1700,10 +1700,9 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 16
 theme_override_styles/panel = SubResource("StyleBoxEmpty_gi581")
-current_tab = 2
+current_tab = 0
 
 [node name="Metadata" type="Panel" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_d2hyp")
@@ -1919,6 +1918,7 @@ text = "Should Update Description?"
 script = ExtResource("5_lml5s")
 
 [node name="Files" type="Panel" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_kpcpn")
