@@ -34,17 +34,17 @@ static func fetch():
 		last_browse_dir = value
 		save()
 
-@export var upload_exclude_files: bool = false:
+@export var upload_exclude_files: bool = true:
 	set(value):
 		upload_exclude_files = value
 		save()
 
-@export var upload_use_steamignore: bool = false:
+@export var upload_use_steamignore: bool = true:
 	set(value):
 		upload_use_steamignore = value
 		save()
 
-@export var upload_hide_excluded: bool = false:
+@export var upload_hide_excluded: bool = true:
 	set(value):
 		upload_hide_excluded = value
 		save()
