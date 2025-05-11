@@ -10,11 +10,11 @@ A simple tool made in Godot. It helps you upload workshop items to any app on St
 
 - Intuitive user interface.
 - Supports modifying an item's title, description, visiblity, and tags.
-- Display preview of an item's BBCode description.
+	- Display preview of an item's BBCode description.
 - Supports displaying and uploading thumbnails, including GIFs.
+- Supports uploading item content as a folder to the workshop.
+	- Supports excluding files from the upload via the UI, or via `.steamignore` files.
 - Open source, contributions are welcome!
 
 ## Upcoming Features
-- [] Support uploading a workshop item folder (basic)
-- [] Support excluding files from the upload (via UI or `.steamignore`)
-- [] Support for a command-line interface (upload via arguments)
+- Support for a command-line interface (upload via arguments)
