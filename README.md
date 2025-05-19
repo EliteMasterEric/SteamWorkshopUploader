@@ -4,7 +4,11 @@
 
 A simple tool made in Godot. It helps you upload workshop items to any app on Steam. I made this because I was annoyed with the clunky tool I had to use for uploading mods for the Binding of Isaac.
 
+## Showcase
+
 ![Screenshot](docs/screenshot.png)
+![Screenshot](docs/screenshot2.png)
+![Screenshot](docs/screenshot3.png)
 
 ## Features
 

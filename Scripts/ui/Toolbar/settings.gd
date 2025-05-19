@@ -13,7 +13,8 @@ func _ready() -> void:
 	set_item_checked(Item.INCLUDE_HIDDEN_FILES, UserPreferences.fetch().include_hidden_files)
 
 func _on_index_pressed(index: int) -> void:
-	match index:
+	var id = get_item_id(index)
+	match id:
 		Item.AUTO_INITIALIZE:
 			print("Toggling auto-initialize...")
 			set_item_checked(Item.AUTO_INITIALIZE, not is_item_checked(Item.AUTO_INITIALIZE))
@@ -29,3 +30,5 @@ func _on_index_pressed(index: int) -> void:
 		Item.CLEAR_USER_PREFERENCES:
 			print("Clearing user preferences...")
 			UserPrefHandler.clear_user_prefs()
+		_:
+			Logger.error("Unknown item pressed: Settings#" + str(index))

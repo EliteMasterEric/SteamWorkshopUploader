@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://yeuwi5ir2uqa"]
+[gd_scene load_steps=33 format=4 uid="uid://yeuwi5ir2uqa"]
 
 [ext_resource type="PackedScene" uid="uid://c8r01vv0beco5" path="res://scenes/ui/Toolbar.tscn" id="1_e13vq"]
 [ext_resource type="Theme" uid="uid://cyaprjck1qyde" path="res://resources/theme.tres" id="2_d2hyp"]
@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://di7r3idru8g7v" path="res://scripts/ui/Main/log_display.gd" id="5_gi581"]
 [ext_resource type="Script" uid="uid://btuu1qad2e5vq" path="res://scripts/ui/Edit/description_should_update_check_box.gd" id="5_lml5s"]
 [ext_resource type="Script" uid="uid://gu6ryseqvra1" path="res://scripts/ui/Edit/select_preview_image_button.gd" id="5_wmsyf"]
+[ext_resource type="Script" uid="uid://j2b1suuivvmq" path="res://scripts/ui/Edit/formatting_help_button.gd" id="6_yw7a7"]
+[ext_resource type="Script" uid="uid://cyf2sbjux3awo" path="res://scripts/ui/Edit/rich_text_description.gd" id="8_hcn8g"]
 [ext_resource type="Texture2D" uid="uid://cjsum1vy0ac66" path="res://assets/textures/interface/include.png" id="9_muy6i"]
 [ext_resource type="Script" uid="uid://di3qp58yhr7wn" path="res://scripts/ui/Edit/browse_files_button.gd" id="10_5c5vg"]
 [ext_resource type="Texture2D" uid="uid://o5y5oe215rq3" path="res://assets/textures/interface/exclude.png" id="10_muy6i"]
@@ -1489,82 +1491,82 @@ cache/1/16/0/underline_thickness = 0.796875
 cache/1/16/0/scale = 1.0
 cache/1/16/0/textures/0/offsets = PackedInt32Array(199, 0, 57, 18, 14, 18, 242, 19)
 cache/1/16/0/textures/0/image = SubResource("Image_wmsyf")
-cache/1/16/0/glyphs/54/advance = Vector2(12.3969, 16.0938)
+cache/1/16/0/glyphs/54/advance = Vector2(12.9969, 16.0938)
 cache/1/16/0/glyphs/54/offset = Vector2(-1, -15)
 cache/1/16/0/glyphs/54/size = Vector2(12, 16)
 cache/1/16/0/glyphs/54/uv_rect = Rect2(1, 1, 12, 16)
 cache/1/16/0/glyphs/54/texture_idx = 0
-cache/1/16/0/glyphs/87/advance = Vector2(9.89688, 16.0938)
+cache/1/16/0/glyphs/87/advance = Vector2(10.4969, 16.0938)
 cache/1/16/0/glyphs/87/offset = Vector2(-1, -14)
 cache/1/16/0/glyphs/87/size = Vector2(10, 15)
 cache/1/16/0/glyphs/87/uv_rect = Rect2(15, 1, 10, 15)
 cache/1/16/0/glyphs/87/texture_idx = 0
-cache/1/16/0/glyphs/72/advance = Vector2(12.8188, 16.0938)
+cache/1/16/0/glyphs/72/advance = Vector2(13.4188, 16.0938)
 cache/1/16/0/glyphs/72/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/72/size = Vector2(12, 13)
 cache/1/16/0/glyphs/72/uv_rect = Rect2(27, 1, 12, 13)
 cache/1/16/0/glyphs/72/texture_idx = 0
-cache/1/16/0/glyphs/68/advance = Vector2(12.8813, 16.0938)
+cache/1/16/0/glyphs/68/advance = Vector2(13.4813, 16.0938)
 cache/1/16/0/glyphs/68/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/68/size = Vector2(12, 13)
 cache/1/16/0/glyphs/68/uv_rect = Rect2(41, 1, 12, 13)
 cache/1/16/0/glyphs/68/texture_idx = 0
-cache/1/16/0/glyphs/80/advance = Vector2(18.8969, 16.0938)
+cache/1/16/0/glyphs/80/advance = Vector2(19.4969, 16.0938)
 cache/1/16/0/glyphs/80/offset = Vector2(0, -12)
 cache/1/16/0/glyphs/80/size = Vector2(17, 13)
 cache/1/16/0/glyphs/80/uv_rect = Rect2(55, 1, 17, 13)
 cache/1/16/0/glyphs/80/texture_idx = 0
-cache/1/16/0/glyphs/3/advance = Vector2(7.75625, 16.0938)
+cache/1/16/0/glyphs/3/advance = Vector2(8.35625, 16.0938)
 cache/1/16/0/glyphs/3/offset = Vector2(0, 0)
 cache/1/16/0/glyphs/3/size = Vector2(0, 0)
 cache/1/16/0/glyphs/3/uv_rect = Rect2(0, 0, 0, 0)
 cache/1/16/0/glyphs/3/texture_idx = -1
-cache/1/16/0/glyphs/58/advance = Vector2(18.7406, 16.0938)
+cache/1/16/0/glyphs/58/advance = Vector2(19.3406, 16.0938)
 cache/1/16/0/glyphs/58/offset = Vector2(-2, -15)
 cache/1/16/0/glyphs/58/size = Vector2(20, 16)
 cache/1/16/0/glyphs/58/uv_rect = Rect2(74, 1, 20, 16)
 cache/1/16/0/glyphs/58/texture_idx = 0
-cache/1/16/0/glyphs/82/advance = Vector2(13.3813, 16.0938)
+cache/1/16/0/glyphs/82/advance = Vector2(13.9813, 16.0938)
 cache/1/16/0/glyphs/82/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/82/size = Vector2(13, 13)
 cache/1/16/0/glyphs/82/uv_rect = Rect2(96, 1, 13, 13)
 cache/1/16/0/glyphs/82/texture_idx = 0
-cache/1/16/0/glyphs/85/advance = Vector2(10.5063, 16.0938)
+cache/1/16/0/glyphs/85/advance = Vector2(11.1063, 16.0938)
 cache/1/16/0/glyphs/85/offset = Vector2(0, -12)
 cache/1/16/0/glyphs/85/size = Vector2(9, 13)
 cache/1/16/0/glyphs/85/uv_rect = Rect2(111, 1, 9, 13)
 cache/1/16/0/glyphs/85/texture_idx = 0
-cache/1/16/0/glyphs/78/advance = Vector2(12.7563, 16.0938)
+cache/1/16/0/glyphs/78/advance = Vector2(13.3563, 16.0938)
 cache/1/16/0/glyphs/78/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/78/size = Vector2(12, 16)
 cache/1/16/0/glyphs/78/uv_rect = Rect2(122, 1, 12, 16)
 cache/1/16/0/glyphs/78/texture_idx = 0
-cache/1/16/0/glyphs/86/advance = Vector2(11.3969, 16.0938)
+cache/1/16/0/glyphs/86/advance = Vector2(11.9969, 16.0938)
 cache/1/16/0/glyphs/86/offset = Vector2(-1, -12)
 cache/1/16/0/glyphs/86/size = Vector2(11, 13)
 cache/1/16/0/glyphs/86/uv_rect = Rect2(136, 1, 11, 13)
 cache/1/16/0/glyphs/86/texture_idx = 0
-cache/1/16/0/glyphs/75/advance = Vector2(13.7563, 16.0938)
+cache/1/16/0/glyphs/75/advance = Vector2(14.3563, 16.0938)
 cache/1/16/0/glyphs/75/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/75/size = Vector2(12, 16)
 cache/1/16/0/glyphs/75/uv_rect = Rect2(149, 1, 12, 16)
 cache/1/16/0/glyphs/75/texture_idx = 0
-cache/1/16/0/glyphs/83/advance = Vector2(13.5688, 16.0938)
+cache/1/16/0/glyphs/83/advance = Vector2(14.1688, 16.0938)
 cache/1/16/0/glyphs/83/offset = Vector2(0, -12)
 cache/1/16/0/glyphs/83/size = Vector2(12, 17)
 cache/1/16/0/glyphs/83/uv_rect = Rect2(1, 19, 12, 17)
 cache/1/16/0/glyphs/83/texture_idx = 0
-cache/1/16/0/glyphs/56/advance = Vector2(15.475, 16.0938)
+cache/1/16/0/glyphs/56/advance = Vector2(16.075, 16.0938)
 cache/1/16/0/glyphs/56/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/56/size = Vector2(13, 16)
 cache/1/16/0/glyphs/56/uv_rect = Rect2(163, 1, 13, 16)
 cache/1/16/0/glyphs/56/texture_idx = 0
-cache/1/16/0/glyphs/79/advance = Vector2(8.06875, 16.0938)
+cache/1/16/0/glyphs/79/advance = Vector2(8.66875, 16.0938)
 cache/1/16/0/glyphs/79/offset = Vector2(0, -15)
 cache/1/16/0/glyphs/79/size = Vector2(6, 16)
 cache/1/16/0/glyphs/79/uv_rect = Rect2(178, 1, 6, 16)
 cache/1/16/0/glyphs/79/texture_idx = 0
-cache/1/16/0/glyphs/71/advance = Vector2(13.5688, 16.0938)
+cache/1/16/0/glyphs/71/advance = Vector2(14.1688, 16.0938)
 cache/1/16/0/glyphs/71/offset = Vector2(-1, -15)
 cache/1/16/0/glyphs/71/size = Vector2(12, 16)
 cache/1/16/0/glyphs/71/uv_rect = Rect2(186, 1, 12, 16)
@@ -1700,9 +1702,10 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 16
 theme_override_styles/panel = SubResource("StyleBoxEmpty_gi581")
-current_tab = 0
+current_tab = 1
 
 [node name="Metadata" type="Panel" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_d2hyp")
@@ -1865,7 +1868,6 @@ text = "1970-01-01T12:00:00"
 horizontal_alignment = 2
 
 [node name="Description" type="Panel" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -1879,12 +1881,23 @@ grow_vertical = 2
 
 [node name="GridContainer" type="GridContainer" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer"]
 layout_mode = 2
+theme_override_constants/v_separation = 4
 columns = 2
 
-[node name="LabelDescription" type="Label" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer"]
+[node name="HBox" type="HBoxContainer" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 296
+
+[node name="LabelDescription" type="Label" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/HBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Description"
+
+[node name="ButtonFormattingHelp" type="Button" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/HBox"]
+layout_mode = 2
+text = "Formatting Help"
+script = ExtResource("6_yw7a7")
 
 [node name="LabelPreview" type="Label" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer"]
 layout_mode = 2
@@ -1909,6 +1922,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme = SubResource("Theme_ff7oo")
 bbcode_enabled = true
+script = ExtResource("8_hcn8g")
 
 [node name="CheckBoxDescriptionShouldUpdate" type="CheckBox" parent="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer"]
 unique_name_in_owner = true
@@ -2028,7 +2042,9 @@ layout_mode = 2
 text = "Submit Changes"
 
 [connection signal="pressed" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer/ButtonSelectPreviewImage" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Metadata/Margin/HBoxContainer/VBoxContainer/ButtonSelectPreviewImage" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/HBox/ButtonFormattingHelp" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/HBox/ButtonFormattingHelp" method="_on_pressed"]
 [connection signal="text_changed" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/TextEditDescription" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/TextEditDescription" method="_on_text_changed"]
+[connection signal="meta_clicked" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/RichTextDescription" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/RichTextDescription" method="_on_meta_clicked"]
 [connection signal="toggled" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/CheckBoxDescriptionShouldUpdate" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Description/MarginContainer/GridContainer/CheckBoxDescriptionShouldUpdate" method="_on_toggled"]
 [connection signal="toggled" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Files/Margin/VBox/HBox/HBox1/CheckBoxExcludeFiles" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Files/Margin/VBox/ItemListFiles" method="on_change_is_exclude_enabled"]
 [connection signal="toggled" from="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Files/Margin/VBox/HBox/HBox1/CheckBoxExcludeFiles" to="VBoxContainer/OuterMargin/Panel/Margin/VBox/TabContainer/Files/Margin/VBox/HBox/HBox1/CheckBoxExcludeFiles" method="_on_toggled"]

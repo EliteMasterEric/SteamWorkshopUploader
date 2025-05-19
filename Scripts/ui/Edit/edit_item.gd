@@ -78,7 +78,10 @@ func _on_button_submit_pressed() -> void:
 	new_ugc_data["title"] = %LineEditTitle.text
 	
 	if %CheckBoxDescriptionShouldUpdate.button_pressed:
+		Logger.info("Including description in upload...")
 		new_ugc_data["description"] = %RichTextDescription.text
+	else:
+		new_ugc_data["description"] = ""
 
 	new_ugc_data["visibility"] = get_visiblity()
 	new_ugc_data["tags"] = ",".join(%HBoxTagList.current_tags)

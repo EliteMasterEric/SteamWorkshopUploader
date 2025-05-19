@@ -52,7 +52,7 @@ theme = ExtResource("1_tdkl7")
 auto_translate_mode = 1
 item_count = 1
 item_0/text = "Quit"
-item_0/id = 1000
+item_0/id = 0
 script = ExtResource("2_ubwij")
 
 [node name="Settings" type="PopupMenu" parent="Margin/HBoxContainer/MenuBar"]

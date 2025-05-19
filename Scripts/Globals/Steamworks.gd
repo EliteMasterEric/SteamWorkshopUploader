@@ -7,6 +7,7 @@ var app_id:int = -1;
 var is_initialized:bool = false;
 
 var tos_url = "https://steamcommunity.com/sharedfiles/workshoplegalagreement"
+var formatting_url = "https://steamcommunity.com/comment/ForumTopic/formattinghelp"
 
 var ugc_items:Dictionary[int, Dictionary] = {}
 
@@ -134,6 +135,10 @@ func update_workshop_item(file_id:int, new_params:Dictionary, change_notes:Strin
 	Steam.setItemTags(_ugc_update_handle, new_params["tags"].split(','))
 	Steam.setItemVisibility(_ugc_update_handle, new_params["visibility"])
 
+	if new_params["description"] != "":
+		print("Uploading description...")
+		Steam.setItemDescription(_ugc_update_handle, new_params["description"])
+
 	if new_params["upload_path"] != "":
 		print("Uploading workshop files: " + new_params["upload_path"])
 		Steam.setItemContent(_ugc_update_handle, new_params["upload_path"])
@@ -192,25 +197,25 @@ func on_current_stats_received():
 	emit_signal("current_stats_received")
 	
 func on_item_created(result:int, file_id: int, accept_tos:bool):
-	Logger.info("[STEAM] Item created: " + str(file_id) + " (result: " + str(result) + ")")
+	Logger.info("[STEAM] Item created: " + str(file_id) + " (result: " + SteamResult.stringify(result) + ")")
 	emit_signal("item_created", result, file_id, accept_tos)
 
 	if accept_tos:
 		open_tos_url()
 	
 func on_item_updated(result: int, accept_tos:bool):
-	Logger.info("[STEAM] Item updated: " + str(result) + " (need to accept TOS? " + str(accept_tos) + ")")
+	Logger.info("[STEAM] Item updated: " + SteamResult.stringify(result))
 	emit_signal("item_updated", result, accept_tos)
 
 	if accept_tos:
 		open_tos_url()
 	
 func on_item_deleted(result:int, file_id: int):
-	Logger.info("[STEAM] Item deleted: " + str(file_id) + " (result: " + str(result) + ")")
+	Logger.info("[STEAM] Item deleted: " + str(file_id) + " (result: " + SteamResult.stringify(result) + ")")
 	emit_signal("item_deleted", result, file_id)
 	
 func on_item_downloaded(result:int, file_id: int, _app_id:int):
-	Logger.info("[STEAM] Item downloaded: " + str(file_id) + " (result: " + str(result) + ")")
+	Logger.info("[STEAM] Item downloaded: " + str(file_id) + " (result: " + SteamResult.stringify(result) + ")")
 	emit_signal("item_downloaded", result, file_id, _app_id)
 	
 func on_item_installed(_app_id:int, file_id: int):
@@ -218,13 +223,13 @@ func on_item_installed(_app_id:int, file_id: int):
 	emit_signal("item_installed", _app_id, file_id)
 	
 func on_ugc_query_completed(handle: int, result:int, results_returned:int, total_matching:int, cached:bool):
-	Logger.info("[STEAM] UGC query completed (result: " + str(result) + "), got " + str(results_returned) + " items")
+	Logger.info("[STEAM] UGC query completed (result: " + SteamResult.stringify(result) + "), got " + str(results_returned) + " items")
 	emit_signal("ugc_query_completed", handle, result, results_returned, total_matching, cached)
 	
 	if result == Steam.RESULT_OK:
 		fetch_queried_ugc_items(results_returned)
 	else:
-		Logger.error("Couldn't get published UGC: " + str(result))
+		Logger.error("Couldn't get published UGC: " + SteamResult.stringify(result))
 	
 	_ugc_request_handle = -1
 		

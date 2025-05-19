@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://cyaprjck1qyde" path="res://resources/theme.tres" id="1_r150o"]
 [ext_resource type="PackedScene" uid="uid://c8r01vv0beco5" path="res://scenes/ui/Toolbar.tscn" id="2_erwvk"]
 [ext_resource type="Script" uid="uid://b342xwbp7nm60" path="res://scripts/ui/Main/tos_label.gd" id="2_grg3l"]
-[ext_resource type="Texture2D" uid="uid://bjqehcmwdbxej" path="res://textures/steamapps/480.png" id="2_vy5pj"]
+[ext_resource type="Texture2D" uid="uid://bjqehcmwdbxej" path="res://assets/textures/steamapps/480.png" id="2_vy5pj"]
 [ext_resource type="Script" uid="uid://3p37wkj84lpt" path="res://scripts/ui/Main/steam_app_dropdown.gd" id="3_kln2b"]
 [ext_resource type="Script" uid="uid://cac2ny4wmuofy" path="res://scripts/ui/Main/steam_status_label.gd" id="3_pbw6q"]
 [ext_resource type="Script" uid="uid://daayx8fqniktl" path="res://scripts/ui/Main/steam_initialize_button.gd" id="3_rgh2o"]
@@ -181,11 +181,13 @@ layout_mode = 2
 
 [node name="DropdownWorkshopType" type="OptionButton" parent="VBox/OuterMargin/MainPanel/MainPanelMargin/VBox/MarginContainer/VBox/HBox/VBox/Panel/VBox"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("1_r150o")
 disabled = true
+selected = 0
 item_count = 17
 popup/item_0/text = "Workshop Item"
 popup/item_0/id = 0
@@ -231,7 +233,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 focus_mode = 0
 theme = ExtResource("1_r150o")
-disabled = true
 text = "Create UGC Item"
 script = ExtResource("10_bmxlf")
 
